@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx Exercises</title>
+</head>
+<body>
+    <script>
+        //basic JS RegEx part 1:
+        const csLewisQuote = 'We are what we believe we are.';
+        const pattern1 = /are/ig;
+        console.log(csLewisQuote.match(pattern1));
+
+        const inStr = "abc123xyz456_7_00";
+        const pattern2 = /[0-9]+/g;
+       // const pattern2 = /\d+/g;
+        console.log(inStr.match(pattern2));
+
+        const wordCat = "Do cats really have 9 lives? Why do they say cats have nine lives? Good king of cats, nothing but one of your nine lives."
+        const pattern3 = /cats/ig;
+        let result3 = wordCat.match(pattern3);
+        console.log(result3);
+        if (result3 != null)
+        {
+        console.log(`The number of cats (case-insenitive) is ${result3.length}.`);
+        //further text processing here
+        }
+        else {
+            console.log("No doggie is found in the string");
+        }
+
+        const string4 = 'Find me';
+        const pattern4 = /me/;
+        console.log(`The position of m in the string is ${string4.search(pattern4)}.`);
+
+        const hellow = 'Hello hello hello';
+        console.log(hellow.replace(/hello/gi, 'world'));
+
+        const word1 = "The quick brown fox jumped over the lazy dog";
+        const word2 = "Mr Blue has a red house and a red car";
+        const word3 = "A1B2C3D4E5F6G7H8I9J10Z";
+        const word4 = "apple+/banana#mango(!#orange-_>durian";
+
+        const pattern4a = /th/ig;
+        let result4 = word1.match(pattern4a);
+        console.log(`"The number of th (case-insenitive) is ${result4.length}`);
+
+        let pattern5 = /(fox|dog)/ig;
+        console.log(word1.match(pattern5));
+
+        let pattern6 = /\b\w{3}\b/g;
+        console.log(word1.match(pattern6));
+
+        let result7 = word1.slice(word1.search(/fox/i)); // return index of fox = 16
+        console.log(result7);
+
+        let replaceThe = word2.replace(/red/ig, 'blue');
+        console.log(replaceThe);
+
+        //replaceThe = Mr Blue has a blue house and a blue car
+        //further transform to Mr Blue has a BLUE HOUSE and a BLUE CAR
+        let replaceUpperCase = replaceThe.replace(/blue|house|car/ig, 
+                                                    (text) => "new " + text.toUpperCase()+100);
+        console.log(replaceUpperCase);
+
+        //"A1B2C3D4E5F6G7H8I9J10Z"
+        //1) find all digits and replace with an empty char
+        //2) result of (1) to convert to lowercase
+
+        let allLetters = word3.replace(/\d/g,"").toLowerCase();
+        console.log(allLetters);
+
+        let allNumbers = word3.replace(/\D/g,"");
+        console.log(allNumbers);
+
+        var digits = allNumbers.toString().split('');
+        var realDigits = digits.map(Number);
+        console.log(realDigits);
+
+          /*  let sum = 0;
+
+            let digit = realDigits[i];
+
+            while ( digit >0) {
+                for (let i=0; i<realDigits.length; i++){
+                   
+                sum += digit;
+                }
+            }
+            console.log(sum);*/
+
+        //const word4 = "apple+/banana#mango(!#orange-_>durian";
+        let nonAlpha = word4.replace(/\W/g,"");
+        let non_Alpha = nonAlpha.replace(/\_/, "");
+        console.log(non_Alpha);
+
+        let blank = word4.replace(/[^a-z]/g," ");
+        console.log(blank);
+
+        const myArray = blank.split("");
+        console.log(myArray);
+
+ 
+        
+    </script>
+
+    
+</body>
+</html>

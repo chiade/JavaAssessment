@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<body>
+    <script>
+         // Practice 3- practice 1
+        let pname = "Desmond", pplace = "Singapore", hobby = "rock-climbing";
+        let informationCard = `Hi, my name is ${pname}. I live in ${pplace} and enjoy ${hobby}`;
+        console.log(informationCard);
+
+        // Practice 3- practice 2
+        let birthyear = 2022;
+        let currentyear = new Date().getFullYear(); // Date object API, getFullYear() method
+        let page = currentyear - birthyear;
+        let possibleAge = page-1;
+        console.log(`Your possible age is ${possibleAge} or ${page} depending on the month of the year`);
+
+        // Practice 3- practice 3
+        const days = 365;
+        let myage = 18;
+        let maxage = 99;
+        let cups = 20;
+        let coffee = (maxage - myage) * cups * 365;
+        let message = 'You will need ' + coffee + ' to last you until the ripe old age of ' + maxage;
+        console.log(message);
+
+        var weight = prompt("what is your weight");
+        var height = prompt("what is your height?");
+        var bmi = (weight / height / height) * 10000;
+        console.log(`Your BMI is ${bmi}`);
+
+    </script>
+
+
+   </body>
+</html>

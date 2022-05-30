@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //check the age of our customer. age <16, cannot buy alcohol
+        //comparison operator ==, <,>, <=, >=, !=
+        const legalAge = 18;
+        let age = 31;
+
+        if (age < legalAge) {
+            console.log("cannot buy");
+        } 
+        else if (age <24) {
+            console.log("You can buy 2 bottles");
+        }
+        else if (age <30) {
+            console.log("You can buy 4 bottles");
+        }
+
+        else {
+            console.log("can buy endless");
+        }
+
+        if (age == legalAge){
+            console.log("You are 18 yo and there's promotion");
+        }
+
+        // comparison operators ==, <,>,<=, >=, !=
+        let a = 10;
+        let b = "20";
+        let c = 20;
+        console.log(a == b); //false
+        console.log(a === b); //false (5 == "5")
+
+        (a != c); //true
+        (a <= c); //true
+        (a < c); //true
+
+        // string methods
+        let text = "hello";
+        let text2 = "hello";
+
+        //instead of using == operator, for string comparison, use the string methods to compare i.e. equal(), compareTo()
+        (text == text2);
+
+        //logical operators (&&, ||, !)
+        // get the current day (1= mon; 2=tues,.... 6 = sat, 0 = sun)
+        let dayNum = 2;
+        //1) daysNum >=1, and <=5: console.log "today is a weekday"
+        //2) daysNum = 6, console.log "today is a weekend"
+        //3) daysNum = 0, console.log "today is weekend"
+
+        if (dayNum >= 1 && dayNum<= 5) {
+            console.log("today is weekday");
+        }
+        else if (dayNum == 0 || dayNum == 6)
+        {
+            console.log("today is weekend");
+        }
+        else{
+            console.log("Invalid day");
+        }
+
+        //eg. check if user input is empty - need to input if none
+        //function to check for user input, return false if user input empty, return true if user input something
+
+        /*function checkUserinput(userInput) {
+            if (userInput.equal("")) {
+                return false;
+            }
+            return true;
+        }
+        let isEmpty = checkUserInput("Jean");
+        console.log(isEmpty); // true
+
+        if (!isEmpty)    // if (isEmpty == true)
+        {
+            console.log("Enter again");
+        }
+        */
+
+        //condiitonal (Ternary) operator (hsorthand)
+
+       /* let voteable;
+        let myAge = 16;
+        if (myAge <18) {
+            voteable = "Too young";
+        }
+        else{
+            voteable = "Old enough";
+        }
+        console.log(voteable);
+
+        let voteable2 = (myAge <18) ? "Too young":"Old enough"*/
+        let voteable;
+        let myAge = 16;
+        age = Number(myAge);
+        // isNaN will check if argument pass is a number
+        // if isNaN return true - age is not number
+        // if isNaN return false, age is a number
+        if (isNaN(age)) {
+            voteable = "input is not a number";
+        } else {
+            voteable = (age <18) ? "Too young" : "Old enough";
+        }
+        console.log(voteable);
+
+        //if-else statement usually used in checking result (true or false) of a condition, and contain either single or multiple expression in a condition
+
+        //switch statement comapring value of the variable w mulitple cases. if value matches any case, it will execute the block of codes in that case
+
+        //e.g. online web game (up, down, left, right, space), get user input key to react according to the game
+
+        let userInput = "left";
+        switch (userInput) {
+            case "up":
+                console.log("Move the player up 1 stop");
+                break;
+            case "down":
+                console.log("Move the player down 1 stop");
+                break;
+            case "left":
+                console.log("Move the player left 1 stop");
+                break;
+            case "right":
+                console.log("Move the player left 1 stop");
+                break;
+            case "space":
+                console.log("Shoot a bullet");
+                break;
+            default:
+                console.log("Invalid key, enter again");
+
+        }
+
+        //Practice 2 - part 1
+        const d = new Date();
+        let dN = d.getDay();
+        let hN = d.getHours();
+
+        /*function businessHours(dayNumber, hourNumber) {
+            if (dayNumber <=5 && hourNumber >=9 && hourNumber <= 18) {
+                return true;
+            }
+            return false;
+            }*/
+        const weeks = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        const businessHour = (dayNumber, hourNumber) => 
+        {
+        let isBusinessHour = false; //default
+
+        if (dayNumber >= 1 && dayNumber <= 5 && 
+        hourNumber >= 9 && hourNumber <= 18)
+        {
+            isBusinessHour = true;
+        }
+
+        return isBusinessHour;
+        } //End of function
+
+       /* console.log(businessHours(dN,hN));
+        businessHours1(dN,hN);
+
+        function businessHours1(dayNumber, hourNumber) {
+        if (dayNumber <=5 && hourNumber >=9 && hourNumber <= 18) 
+        {
+            console.log("Welcome, now is business hour");
+        }
+        else if (dayNumber <=5 && hourNumber > 18 && hourNumber <9)
+        {
+            console.log("It is after office hour, please visit us during the business hour");
+        }
+        else{
+            console.log("It is a weekend, shop closed");
+        }
+    }*/
+        const todayDay = new Date().getDay();   // 0 to 6 - 5 (Monday)
+        const currentHour = new Date().getHours();    // 14
+
+        let isOpen = businessHour(todayDay, currentHour);
+
+        if (isOpen)     //if (isOpen == true)
+        {
+            console.log(`${weeks[todayDay]}, ${currentHour}:00- Welcome, now is business hours`);
+        }
+        else
+        {
+                console.log("It is after office hour, please visit us during the business hour");
+        }
+
+        //Practice 2 - #2
+     /*  function grading(score) {
+        if (score >=5 && score <=8) 
+        {
+            console.log("You passed");
+        }
+        else if (score >=0 && score <4)
+        {
+            console.log("You failed");
+        }
+        else if (score > 8 && score < 11)
+        {
+            console.log("Excellent");
+        }
+        else if (score == 11) {
+            console.log("Perfect");
+        }
+        else {
+            console.log("Invalid score");
+        }
+    }
+    grading(1);*/
+
+    const result = (score) =>
+            {
+                if (score < 0 || score > 11)
+                {
+                    console.log("Invalid score");
+                }
+                else 
+                {
+                    if (score == 11)
+                    {
+                        console.log("Perfect!");
+                    }
+                    else if (score >= 8)
+                    {
+                        console.log("Excellent");
+                    }
+                    else if (score >= 5)
+                    {
+                        console.log("You passed")
+                    }
+                    else
+                    {
+                        console.log("you failed");
+                    }
+                }
+        }
+
+let jeanResult = result(6);
+let damienResult = result(9);
+let faaizResult = result(11);
+
+
+    </script>
+</body>
+</html>

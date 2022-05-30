@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples on function</title>
+</head>
+<body>
+    <script>
+    //1) Standard function using function keyword
+    // parameter(s), argument(s), return
+
+    //a) Declare a function w/o parameter, argument, return
+    //e.g. create a function that adds 10 and 20 and console.log the total
+
+    addNumber();    //is ok, wil lcall the function altho' on top
+    function addNumber(){
+        const num1 = 10;
+        const num2 = 20;
+        let total = num1 + num2; 
+        console.log(`The total is ${total}`);
+    }
+    addNumber();
+
+    //b) create a function that adds 2 numbers that are passed in from the calling the function and console.log the total
+
+    function addCost(num1, num2) {  //function with 2 parameters
+            let total = num1 + num2; 
+            console.log(`The total is ${total}`);
+    }
+    addCost(20, 40);    //pass in value is called arguments
+    addCost(50, 30);
+
+    //c) create a function that adds 2 numbers and return the total to the caller
+
+    function addPrice(num1, num2) {  //function with 2 parameters
+            let total = num1 + num2; 
+            return total;
+    }
+
+    let jeanPrice = addPrice(10,30);
+    console.log(`Hi Jean, your total price to pay is $${jeanPrice}`);
+
+    //function expressions (arithmetic operation, calculator -,+,/,*)
+    const myTotal = function(num1, num2, num3) {return (num1 + num2) * num3};
+
+    const day1 = myTotal(2,2,2);    //8 is a const var
+    const day2 = myTotal(3,1,4);     //16 is the const var
+
+    let twodays = day1 + day2;
+    console.log(twodays);
+
+        //arrow functions
+        const myTotal2 = (num1, num2, num3) => (num1 + num2) * num3;
+        console.log(myTotal2(2,3,4));
+
+        //nested function, String methods, fetch methods 
+
+        //practice 1: Basic function - arrow function
+        const helloWorld = () => "Hello World"; //single statment no need keyword
+        console.log(helloWorld());
+
+        const myTotal3 = (num1, num2) => num1 + num2;
+        console.log(myTotal3());
+
+        //1) Parameter for the function - need pass in word
+        //2) what is the return value from the function - length of word
+
+        const strLength = (word) => word.length;
+        console.log(strLength("Hello World"));
+        console.log(strLength("Desmond Chia"));
+
+        // Information card with 3 paramaters
+        const informationCard = (name, location, hobby) => `Hi, my name is ${name}. I live in ${location} and enjoy ${hobby}.`
+
+        console.log(informationCard("Desmond", "Singapore","rock-climbing"));
+        
+        //name will be retreived from database or user input - string, number, boolean, array, object
+        let name = "Desmond chia";  
+        let email = "jenny@gmail.com";
+
+        //Practice 3: exercise #1
+        //Jan - Maria spent $100; Feb - $200
+        //1) Parameter for the function - transaction price (dynamic)
+        //2) what is the return value - price + (price*interest) + servicefee
+        const interest = 1.01;
+        const servicefee = 3;
+
+        const payment = (price) => price*interest + servicefee;
+
+        const jan = 100;
+        console.log(`Maria's transaction cost is $${jan} and she needs to pay $${payment(jan)}`);
+
+        //Ex2.- part 1
+        const name1 = prompt('What is the first name?');
+        const name2 = prompt('What is the second name?');
+        const name3 = prompt('What is the third name?');
+        const names = (name1, name2, name3) => `Welcome ${name1}, ${name2}, ${name3}.`;
+        console.log(names(name1, name2, name3));
+        
+
+        // part 2
+const currentYear = new Date().getFullYear();
+const getAge = (birthYear) => currentYear - birthYear;
+let promptAge = prompt("Which year were u born?", 1990);
+console.log(getAge(promptAge));
+
+const printDetails = (name1, age1, name2, age2, name3, age3) => console.log(`Welcome ${name1}, you are ${age1}. Welcome ${name2}, you are ${age2}. Welcome ${name3}, you are ${age3}.`);
+printDetails("james",30, "ray", 40, "des",50);
+
+ /*       const birthyear = prompt("Your birthyear?");
+        const age = (currentage) => currentyear - birthyear;
+        const currentyear = 2022;
+        console.log(`Your age is ${age(currentyear)}`);
+
+        //part3
+        const birthyear1 = prompt("Your birthyear?");
+        const age1 = (currentage1) => currentyear - birthyear1;
+        const birthyear2 = prompt("Your birthyear?");
+        const age2 = (currentag2) => currentyear - birthyear2;        
+        const birthyear3 = prompt("Your birthyear?");
+        const age3 = (currentage3) => currentyear - birthyear3;
+        console.log(`Welcome ${name1}, you are ${age1(currentyear)}. Welcome ${name2}, you are ${age2(currentyear)}. Welcome ${name3}, you are ${age3(currentyear)}.`);
+*/
+        //Ex#3
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

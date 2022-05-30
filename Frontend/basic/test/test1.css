@@ -1,0 +1,533 @@
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#989898;
+}
+.logo h5 {
+    height: 32px;
+}
+
+header {
+    display: flex;
+    height: 64px;                     
+}
+
+.titleMenu {
+    color: #9f9b9b;
+    height: 32px;
+}
+
+.titleMenu span {
+    color: #01161E;
+}
+h1 { font-size: 30px;
+font-weight: bold;}
+h2 {font-size:24px;
+}
+h3 {font-size:22px;
+}
+h4 {font-size:20px;
+}
+h5 {font-size:18px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;            
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.desktop {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px; 
+}
+.desktop > a {
+    padding-left:16px;             
+    text-decoration: none;
+    color:#515151;
+}
+.section1 {
+    background: #989898;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    flex-direction: row;
+    margin: 0px auto;
+    width: 100%;
+}
+.motto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+    padding-left: 24px;
+    padding-top: 0px;
+    width: 100%;
+    padding-right: px;
+}
+.section2 {
+    background-color: beige;
+    padding-top:32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom:32px;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-right: 24px; 
+}
+.desktop1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+    padding-right:30px;
+    background-color: beige;
+    height:100%;
+}
+.desktop1 img, p {
+    width:100%;
+}
+
+.desktop11 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:65%;
+    background-color:beige;
+}
+.sectiond-content, .sectiond-content1 {
+    background-color: beige;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height:auto;
+    width:100%;
+
+}
+.sectiond-content2 {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height:auto;
+    width:100%;
+
+}
+.sectiond-content img, .sectiond-content1 img, .sectiond-content2 img  {
+    width: 35%;
+    height: auto;
+    padding:16px;
+
+}
+/*.desktop-a {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: pink;
+    padding-left:24px;
+}*/
+
+.motto21, .motto22 {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: beige;
+    height:0%;
+}
+.motto23 {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: lightgrey;
+    height:0%;
+
+}
+.motto21 h3, .motto22 h3, .motto23 h3 {
+    margin-bottom: 0px;
+}
+.motto21 p, .motto22 p, .motto23 p {
+    margin-bottom:5px;
+    margin-top:10px;
+}
+.motto21 a, .motto22 a, .motto23 a {
+    color: blue;
+    text-decoration: none;
+    margin-bottom:16px;
+    margin-top:0px;
+}
+
+/* Remove mobile icon */
+.mobile {
+    display: none;
+}
+.motto button {
+    background-color: grey;
+    width:60%;
+    align-items: center;
+    border: none;
+}
+.motto a {
+    color: white;
+    text-decoration: none;
+}
+
+.motto h1 {
+    width: 100%;
+    color: grey;
+    margin-bottom: 16px;
+    margin-right:0px;
+}
+.motto h4 {
+    color: grey;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.section1 div {
+    margin-right:0px;
+}
+.section1 img {
+    width:60%;
+}
+.section3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.BOX {    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgrey;
+    margin: 0px auto;
+
+   
+}
+.section3 h2 {
+    margin-top: 32px;
+    margin-bottom:32px;
+    text-align: center;
+}
+.box1 h2 {
+    text-align: left;
+}
+.image-style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.image-style div {
+    width:20%;
+
+}
+.image-style img {
+    height: auto;
+    width:100%;
+}
+.flex-column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-style h4 {
+    padding-top: 16px;
+    padding-left:16px;
+}
+.image-style h2 {
+    padding-bottom: 16px;
+    padding-top:0px;
+    padding-left: 16px;
+}
+.image-style p {
+    padding-bottom: 24px;
+    width:100%;
+    padding-left:16px;
+}
+.box1 {
+    width: 100%;
+    background-color: beige;
+    justify-content: space-around;
+    margin-left: 72px;
+    margin-right:72px;
+    margin-bottom:32px;
+    margin-top:32px;
+}
+.section4 {
+    background-color: beige;
+    padding-top:32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom:32px;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 24px; 
+}
+.section4 h2 {
+        margin-top: 32px;
+        margin-bottom:32px;
+        text-align: center;
+}
+.section4a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width:100%;
+    height:100%;
+}
+
+.desktop4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+    padding-right:24px;
+    background-color: beige;
+    height:100%;
+}
+
+.sectiond4-content h3 {
+    color: black;
+    margin-top: 32px;
+    margin-bottom:32px;
+    margin-left: 24px;
+}
+.sectiond4-content p {
+    width: 100%;
+    margin-left: 24px;
+}
+.sectiond4-content video {
+    width: 100%;
+    margin-left: 24px;
+}
+.motto4 {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width:65%;
+        background-color:beige;
+}
+.orientation4 {
+    background-color:lightgrey;
+    padding-left: 16px;
+    padding-bottom:16px;
+    padding-top: 16px;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height:auto;
+}
+.orientation41 {
+    background-color:white;
+    padding-left: 16px;
+    padding-bottom:16px;
+    padding-top: 16px;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height:auto;
+}
+.orientation4-motto1 {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:lightgrey;
+    height:auto;
+}
+.orientation41-motto1 {
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: beige;
+    height:auto;
+}
+.orientation4-motto1 h3, .orientation41-motto1 h3 {
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.orientation4-motto1 p, .orientation41-motto1 p {
+    margin-bottom:0px;
+    margin-top:10px;
+}
+.orientation4 img, .orientation41 img  {
+    width: 35%;
+    height: auto;
+    padding:16px;
+}
+.exhibit {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: auto;
+    width: 100%;
+}
+.footer1 h5 {
+    margin-left:24px;
+    margin-top:16px;
+    margin-bottom: 0px;
+    width: 150%;
+}
+.footer2 a {
+    margin-top:16px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width:720px) 
+{
+    /* Do Not Display */
+    .desktop, .logo {
+      display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;     
+      }
+      .mobile img {
+          width: 100%;
+          padding: 0px;
+      }
+      .sectionm1-content {
+        padding-left: 0px;
+        width: 100%;
+        background-color: lightgrey;
+      }
+
+    .motto1m h1,  .motto1m h3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-left: 50px;
+        width: 100%;
+        color: grey;
+    }
+      .motto1m p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+      }
+      .motto1m a {
+        text-decoration: none;
+       }
+
+      .motto1m button {
+        background-color: grey;
+        color:#ffffff;
+        width: 300px;
+        height: 35px;
+        align-items: center;
+        border: none;
+
+       }
+       .sectionm2-content {
+        padding-left: 0px;
+        width: 100%;
+        background-color: beige;
+        margin-bottom:16px;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+       }
+       .motto2m h3 {
+        display: flex;
+        justify-content: flex-start;
+        margin-left:16px;
+        }
+
+       .motto2m p {
+        display: flex;
+        justify-content: flex-start;
+        margin-left:16px;
+        }
+        .motto2m a {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: blue;
+        margin-left:0px;
+        margin-bottom:16px;
+        }
+        .sectionm3-content {
+        padding-left: 0px;
+        padding-top:16px;
+        padding-bottom:0px;
+        width: 100%;
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+       }
+       .sectionm3-content div {
+        width: 100%;
+     
+       }
+       .sectionm3-content h2 {
+        padding-left: 0px;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom:16px;
+        display: flex;
+        flex-direction: column;
+       }
+       .motto3m {
+           margin-top:0px;
+           margin-bottom:0px;
+           width:100%;
+       }
+       .motto3m p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;        
+        margin-top:0px;
+        width:100%;
+       }
+       .motto3m a {
+        text-decoration: none;
+       }
+
+       .motto3m button {
+        background-color: lightgrey;
+        color:#ffffff;
+        width: 300px;
+        height: 35px;
+        align-items: center;
+        border: none;
+       }
+       .sectionm4-content {
+        width: 100%;
+      }
+ }

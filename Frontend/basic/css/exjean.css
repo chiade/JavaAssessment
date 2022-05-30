@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color:#989898;
+}
+.logo h5 {
+    height: 32px;
+}
+
+header {
+    display: flex;
+    height: 64px;                     
+}
+
+.titleMenu {
+    color: #9f9b9b;
+    height: 32px;
+}
+
+.titleMenu span {
+    color: #01161E;
+}
+h1 { font-size: 30px;
+font-weight: bold;}
+h2 {font-size:24px;
+}
+h3 {font-size:22px;
+}
+h4 {font-size:20px;
+}
+h5 {font-size:18px;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;            
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.section1 {
+    background: #989898;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+}
+
+.desktop {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px;            
+}
+
+.desktop > a {
+    padding-left:16px;             
+    text-decoration: none;
+    color:#515151;
+}
+
+/* Remove mobile icon */
+.mobile {
+    display: none;
+}
+.motto button {
+    background-color: grey;
+    color:#ffffff;
+    width: 60%;
+    align-items: center;
+    border: none;
+}
+.motto h1 {
+    width: 600px;
+    color: grey;
+    margin-bottom: 16px;
+}
+.motto h4 {
+    width: 600px;
+    color: grey;
+    margin-bottom: 8px;
+}
+
+.sectiond-content div {
+    margin-right:24px;
+}
+.sectiond-content img {
+    width:100%;
+}
+.motto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 24px;
+    padding-top: 0px;
+}
+
+@media only screen and (max-width:720px) 
+{
+    /* Do Not Display */
+    .desktop, .logo {
+      display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;          
+      }
+      .sectionm-content img {
+          width: 100%;
+      }
+      .sectionm-content {
+        padding-left: 0px;
+        width: 450px;
+      }
+    .motto1 h1, h3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-left: 60px;
+        width: 450px;
+        color: grey;
+    }
+      .motto1 p {
+          display: flex;
+          justify-content: center;
+          align-items: center
+      }
+      .motto1 button {
+        background-color: grey;
+        color:#ffffff;
+        width: 300px;
+        height: 35px;
+        align-items: left;
+        border: none;
+       }
+}
+.section2 {
+    background-color: white;
+    padding-top:32px;
+    padding-left: 24px;
+}
+.sectiond2-content img {
+    width:60%;
+}
+.sectiond2-content h2 {
+    margin-top: 32px;
+    margin-bottom:24px;
+}
+.sectiond2-content h6 {
+    margin-bottom:32px;
+}
+main {
+    display: flex;
+}
+aside {
+    flex-basis: 50%;
+}
+.orientation-motto1 .orientation1-motto1 .orientation2-motto2 {
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.orientation-content img {
+    width: 35%;
+}
+.orientation1-content img {
+    width: 35%;
+}
+.orientation {
+    background-color:white;
+    padding-right:24px;
+}
+.orientation1 {
+    background-color:white;
+    padding-right:24px;
+}
+.orientation2 {
+    background-color: grey;
+    padding-right:24px;
+}
+.orientation2-content img {
+    width: 35%;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section3 {
+    background-color: lightgrey;
+    margin: auto;
+    padding-bottom: 32px;
+    padding-right: 72px;
+    padding-left:72px;
+}
+.section3 h2 {
+    margin-top: 32px;
+    margin-bottom:32px;
+    text-align: center;
+}
+.box1 h2 {
+    text-align: left;
+}
+.image-style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-style div {
+    margin: 10px;
+}
+.image-style img {
+    height: auto;
+    width:280px;
+}
+.flex-column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-style h4 {
+    padding-top: 16px;
+    padding-left:16px;
+}
+.image-style h2 {
+    padding-bottom: 16px;
+    padding-top:0px;
+    padding-left: 16px;
+}
+.image-style p {
+    padding-bottom: 24px;
+    width: 280px;
+    padding-left:16px;
+}
+.box1 {
+    width: 280px;
+    background-color: white;
+}
+.section4 {
+    background-color: white;
+}
+.flex-column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section4 h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectiond4-content h3 {
+    color: black;
+    margin-top: 32px;
+    margin-bottom:32px;
+    margin-left: 24px;
+}
+.sectiond4-content p {
+    width: 70%;
+    margin-left: 24px;
+
+}
+.sectiond4-content iframe {
+    width: 60%;
+    margin-left: 24px;
+}
+.orientation4 {
+    background-color:lightgrey;
+    padding-left: 16px;
+    padding-bottom:16px;
+    padding-top: 16px;
+    width:35%;
+}
+.orientation41 {
+    background-color:white;
+    padding-left: 16px;
+    padding-bottom:16px;
+    padding-top: 16px;
+    width:35%;
+}
+
+.orientation4-motto1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+
+}
+.orientation41-motto1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+}
+.orientation4-content img {
+    width: 35%;
+}
+.orientation41-content img {
+    width: 35%;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: auto;
+    width: 100%;
+}
+.footer1 h5 {
+    margin-left:24px;
+    margin-top:16px;
+    margin-bottom: 0px;
+    width: 150%;
+}
+.footer2 a {
+    margin-top:16px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    text-decoration: none;
+    justify-content: flex-end;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class exmplae for course page</title>
+</head>
+<body>
+    <script>
+        //as a student, i want to view all the course that are available in the course page when I login to the web App
+
+        //1) Create the course class - class is just a template of what to model
+        class Course
+        {
+            constructor(courseCode, title, duration, credit, classSize) {
+                //refers to whichever instance object taht calls the constructor - special method
+                //2) Create the properties
+                this.courseCode = courseCode;
+                this.title = title;
+                this.duration = duration;
+                this.credit = credit;
+                this.classSize = classSize;
+            }
+
+            //methods
+            //1) getter and setter method (in java)
+            //2) other methods create 
+
+            //Display individual course
+            // each method will only do one action
+            displayCourse() {
+                console.log(`Course code: ${this.courseCode} Title: ${this.title} Duration: ${this.duration}`);
+            }
+
+        }//end of course class object
+
+        //e.g need create 3 courses i.e. 3 instances of course class object
+        //1) JFSD (2) cloud & dev ops (3) data analytics => these are instances of course object
+        // jfsd is an instance of course object
+        const jfsd = new Course("JFSD0001","Junior Full Stack Developer", 3, 5, 40);
+        jfsd.displayCourse();
+
+        //cloud is an instance of course object
+        const cloud = new Course("C002","Cloud and DevOps",3,6,30);
+        cloud.displayCourse();
+
+        //data is an instance of course object
+        const data = new Course("DA002","Data Analytics",3,4,15);
+        data.displayCourse();
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

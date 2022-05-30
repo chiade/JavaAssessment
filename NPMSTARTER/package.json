@@ -1,0 +1,22 @@
+{
+  "name": "npmstarter",
+  "version": "1.0.0",
+  "description": "This is for class practice",
+  "main": "index.js",
+  "scripts": {
+    "npmExample": "node npmExample.js",
+    "fetchUser": "node fetchUser.js",
+    "test": "jest"
+  },
+  "author": "desmond chia",
+  "license": "ISC",
+  "dependencies": {
+    "complete-randomer": "^1.9.1",
+    "node-fetch": "2.0",
+    "prompt-sync": "^4.2.0",
+    "table": "^6.8.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
